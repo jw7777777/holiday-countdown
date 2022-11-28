@@ -1,0 +1,107 @@
+/* Copyright (c) 2022 jw7777777, license MIT */
+
+body {
+  font-family: sans-serif;
+  background: #f8fafc;
+  background-image: url('../img/pexels-elias-tigiser-1720669.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flake {
+  color: rgb(247, 252, 243);
+  font-size: 2rem;
+  padding: 1rem;
+  animation: fall 2s linear forwards infinite;
+  animation-delay: 1s;
+}
+
+.countdown {
+  position: absolute;
+  top: 81%;
+  left: 67%;
+  transform: translateX(-50%) translateY(-50%);
+  /* color: #17D4FE; */
+  color: #f8fafc;
+  font-size: 200px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 7px;
+}
+
+.daysuntil {
+  position: absolute;
+  top: 40%;
+  left: 31%;
+  transform: translateX(-50%) translateY(-50%);
+  /* color: #17D4FE; */
+  color: #f8fafc;
+  font-size: 68px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 7px;
+  -webkit-animation: glowing-text 1s ease-in-out infinite alternate;
+  -moz-animation: glowing-text 1s ease-in-out infinite alternate;
+  animation: glowing-text 1s ease-in-out infinite alternate;
+}
+
+img {
+  position: absolute;
+  top: 97%;
+  right: 24%;
+  /* transform: translateX(-50%) translateY(-50%); */
+  border-radius: 90%;
+  min-width: 5%;
+  max-height: 24%;
+  opacity: 0.7;
+}
+
+.penguin {
+  height: 300px;
+  width: 300px;
+}
+
+
+@keyframes fall {
+  from {
+    transform: translateY(-10vh);
+  }
+
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+
+.master {
+  color: white;
+  float: right;
+}
+
+@media only screen and (max-width: 800px) {
+  .flake {
+    font-size: 1rem;
+    animation-delay: 0s;
+  }
+
+  .master {
+    display: none;
+  }
+}
+
+
+@-webkit-keyframes daysuntil {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
+  }
+
+  100% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
