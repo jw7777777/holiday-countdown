@@ -5,7 +5,7 @@
 function daysUntil() {
 
     var startDate = moment()
-    var endDate = moment("26.12.2023", "DD.MM.YYYY");
+    var endDate = moment("26.12.2024", "DD.MM.YYYY");
     var days = endDate.diff(startDate, 'days');
 
     document.getElementById("daysToXmas").innerText = days;
